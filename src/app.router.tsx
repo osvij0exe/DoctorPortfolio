@@ -1,16 +1,23 @@
 
 import { createBrowserRouter, Navigate } from "react-router";
+import { DoctorProfileLayout } from "./modules/DoctorsPortfolio/layouts/DoctorProfileLayout";
+import { HomePage } from "./modules/DoctorsPortfolio/pages/home/HomePage";
 
 
 export const appRouter = createBrowserRouter(
     [
         {
-        path: "/",
-        element: <Navigate to="/doctors" />
+            path: "/",
+            element: <DoctorProfileLayout />,
+            children:[
+                {
+                    index: true,
+                    element: <HomePage />
+                }
+            ],
         },
         {
-        path: "/doctors",
-        element: <div>Doctors Page</div>
+            path: '*',
+            element: <Navigate to="/" />    
         }
-    ]
-)
+    ])

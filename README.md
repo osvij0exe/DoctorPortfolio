@@ -32,6 +32,16 @@ npm run preview
 
 El proyecto tambien incluye `npm run lint` para ejecutar Oxlint.
 
+## React Router
+
+React Router permite definir las rutas y mostrar las paginas dentro de un layout. Para instalarlo en un proyecto React que aun no lo tenga:
+
+```bash
+npm install react-router
+```
+
+En este proyecto el paquete ya esta declarado en `package.json`; en una clonacion limpia basta con ejecutar `npm install`. El enrutador se configura en `src/app.router.tsx`, `DoctorsApp` monta el `RouterProvider` y el layout debe renderizar un `<Outlet />` para mostrar la pagina hija correspondiente.
+
 ## Tailwind CSS 4
 
 Tailwind CSS 4 ya esta instalado en este proyecto como dependencia (`tailwindcss` y `@tailwindcss/vite`). En una instalacion desde cero, `npm install` instala esas dependencias desde `package.json`. Si se integra Tailwind en otro proyecto Vite con React, se pueden instalar con:
