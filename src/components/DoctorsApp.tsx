@@ -1,9 +1,9 @@
-import React from 'react'
-import { RouterProvider } from "react-router";
 
+import { RouterProvider } from "react-router";
+import { appRouter } from "../app.router";
 
 export const DoctorsApp = () => {
   return (
-    <RouterProvider />
+    <RouterProvider router={appRouter} />
   )
 }
