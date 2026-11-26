@@ -3,7 +3,7 @@ export const DoctorResume = () => {
     return (
         <div className="w-full px-4 sm:px-6 lg:px-8 py-8 ">
             <div className="max-w-6xl mx-auto ">
-                <div className="bg-linear-to-br  from-emerald-300 via-white to-emerald-300 rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition-all duration-300">
+                <div className="bg-linear-to-br from-emerald-300 via-white to-emerald-300 rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition-all duration-300">
                     <div className="flex flex-col md:flex-row items-stretch">
                         {/* Imagen */}
                         <div className="w-full md:w-2/5 shrink-0 overflow-hidden">

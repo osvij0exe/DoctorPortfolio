@@ -1,5 +1,6 @@
 import { DoctorResume } from "../../components/DoctorResume"
 import { HeroSection } from "../../components/HeroSection"
+import { TimeLine } from "../../components/TimeLine"
 import { TrustSignalCrad } from "../../components/TrustSignalCard"
 
 export const HomePage = () => {
@@ -16,6 +17,7 @@ export const HomePage = () => {
         </div>
         <DoctorResume />
         
+        <TimeLine />
         </>
 
     )
