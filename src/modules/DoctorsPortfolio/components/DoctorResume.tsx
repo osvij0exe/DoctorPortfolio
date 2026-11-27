@@ -18,8 +18,8 @@ export const DoctorResume = () => {
                         <div className="w-full md:w-3/5 flex flex-col justify-center p-6 sm:p-8 md:p-10">
                             <p className=" text-emerald-800 font-semibold text-lg sm:text-3xl mb-2">Dra. Jessica Jocelyn </p>
                             <p className="text-emerald-800 font-semibold text-lg sm:text-3xl mb-2"> Amdor Cuenca</p>
-                            <p className="text-emerald-700 leading-relaxed text-lg sm:text-2xl font-semibold">Corazón y esperanza: atención especializada</p>
-                            <p className="text-emerald-700 leading-relaxed text-lg sm:text-2xl font-semibold"> en cardio-oncología.</p>
+                            <p className="text-emerald-700 leading-relaxed text-lg sm:text-2xl font-semibold">Corazón y esperanza:</p>
+                            <p className="text-emerald-700 leading-relaxed text-lg sm:text-2xl font-semibold">atención especializada en cardio-oncología.</p>
                             <p className="text-slate-900 leading-relaxed text-sm sm:text-base font-normal">
                                 Médica especialista en Cardiología, con experiencia profesional en reconocidas 
                                 instituciones hospitalarias públicas y privadas de la Ciudad de México. Cuenta con 

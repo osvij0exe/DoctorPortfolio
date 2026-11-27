@@ -1,4 +1,5 @@
 import { IoShieldCheckmarkOutline } from "react-icons/io5"
+import { AnchorButton } from "../../../components/ui/AnchorButton"
 
 export const HeroSection = () => {
     return (
@@ -20,12 +21,7 @@ export const HeroSection = () => {
                     <p className="max-w-lg border-l-4 border-emerald-500 pl-4 text-pretty text-base leading-8 text-slate-700 sm:text-lg">
                         Enfocada en la prevención, diagnóstico y tratamiento de las complicaciones cardiovasculares asociadas al cáncer.
                     </p>
-                    <a
-                        href="*"
-                        className="rounded-md bg-brand px-5 py-3 font-medium bg-emerald-800 text-white hover:bg-emerald-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-                    >
-                        Agendar cita
-                    </a>
+                    <AnchorButton buttonNanmeValue="Agendar cita" />
                 </div>
 
                 <div className="flex flex-col items-center gap-5 md:items-end">

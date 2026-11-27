@@ -1,15 +1,17 @@
 import { Fragment } from 'react';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import { timelineEvents, type TimelineEvent } from '../../../mocks/TimelineEvents.mocks';
 
 import { TimeLinePillar } from '../../../components/ui/TimeLinePillar';
 import { TimeLineEventCard } from '../../../components/ui/TimeLineEventCard';
-import { TimelineCircle } from '../../../components/ui/TimelineCircle';
+import { TimeLineCircle } from '../../../components/ui/TimeLineCircle';
+import { AnchorButton } from '../../../components/ui/AnchorButton';
 
 export const TimeLine = () => {
     return (
         <div className='w-full px-4 py-8 sm:px-6 lg:px-8'>
             <div className='mx-auto flex max-w-6xl flex-col gap-y-3'>
-                <TimelineCircle />
+                <TimeLineCircle />
 
                 {timelineEvents.map((event: TimelineEvent, index) => (
                     <Fragment key={event.id}>
@@ -19,12 +21,15 @@ export const TimeLine = () => {
                                 <TimeLineEventCard heading={event.heading} subHeading={event.subHeading} />
                             </div>
                         </div>
-                        {index < timelineEvents.length - 1 && <TimelineCircle />}
+                        {index < timelineEvents.length - 1 && <TimeLineCircle />}
                     </Fragment>
                 ))}
-
-                <TimelineCircle />
+                <TimeLineCircle />
             </div>
+            <div className='mx-auto flex max-w-6xl justify-end'>
+                <AnchorButton buttonNanmeValue="Ver más ..." icon={<AiOutlineArrowRight />} />
+            </div>
+
         </div>
     )
 }
